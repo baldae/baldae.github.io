@@ -1,0 +1,54 @@
+:root {
+    --sidebar-color: rgb(115, 194, 204);
+    --header-color: rgb(15, 29, 34);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.btn1 {
+    margin: 0 100px 0 100px;
+    width: 100px;
+    height: 25px;
+    background: var(--sidebar-color);
+    border-radius: 5px;
+    color: var(--header-color);
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 25px;
+}
+
+.btn2 {
+    margin: 0 100px 0 100px;
+    width: 100px;
+    height: 25px;
+    background: var(--header-color);
+    border-radius: 5px;
+    color: var(--sidebar-color);
+    text-decoration: none;
+    text-align: center;
+    font-size: 16px;
+    text-transform: uppercase;
+    line-height: 25px;
+}
+
+@keyframes transition1 {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+main {
+    animation: transition1 0.7s;
+}
